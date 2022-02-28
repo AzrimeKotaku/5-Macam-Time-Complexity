@@ -1,1 +1,10 @@
+#include<stdio.h>
 
+int main(){
+	int x;
+	int hasil = 0;
+	printf("Inputkan x : ");
+	scanf("%d", &x);
+	hasil = 3*x*x - 5*x + 6;
+	printf("Hasil = %d", hasil);
+}
