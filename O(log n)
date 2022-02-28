@@ -1,1 +1,25 @@
+#include<stdio.h>
 
+int main(){
+	int array[5] = {1,2,3,4,5};
+	int n, terendah = 0, tertinggi = 5, tengah;
+	
+	printf("Inputkan n : ");
+	scanf("%d", &n);
+	
+	while(terendah <= tertinggi){
+		tengah = (terendah + tertinggi) / 2;
+		if(n > array[tengah]){
+			terendah = tengah + 1;
+		}else if(n  < array[tengah]){
+			tertinggi = tengah - 1;
+		}else{ terendah = tertinggi + 1;
+		}
+	}
+	if(n == array[tengah]){
+		printf("Data ditemukan pada urutan ke %d", tengah+1);
+		printf("\n");
+	}else{
+		printf("Data tidak ditemukan\n");
+	}
+}
