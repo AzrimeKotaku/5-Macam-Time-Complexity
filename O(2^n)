@@ -1,15 +1,15 @@
 #include<stdio.h>
 
-int fib(int n);
+int A(int n);
 
 main(){
-	int a;
+	int n;
 	printf("");
-	scanf("%d", &a);
-	fib(a);
+	scanf("%d", &n);
+	A(a);
  }
   
-int fib(int n) {
+int A(int n) {
 	if(n == 0)
 		return 0;
 	else if(n == 1)
